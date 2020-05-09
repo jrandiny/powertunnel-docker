@@ -4,8 +4,7 @@ This is a simple docker image for [PowerTunnel](https://github.com/krlvm/PowerTu
 
 ## Example Usage
 ```
-docker build -t jrandiny/powertunnel .
-docker run -p 8085:8085 -v `pwd`/sample-config:/config docker.pkg.github.com/jrandiny/powertunnel-docker/powertunnel:latest
+docker run -p 8085:8085 -v /sample-config:/config jrandiny/powertunnel:latest
 ```
 
 Then configure your browser proxy configuration to `localhost:8085`
